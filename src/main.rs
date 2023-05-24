@@ -20,6 +20,10 @@ use std::fs;
 //File reading
 //UI & Cursor
 
+//---------FIX-----------
+//Panic when Special character is inserted (e.g. ä, ö, ü), propable cause is improper handling of multi-byte characters (ASCII should work, Unicode etc won't)
+//
+
 fn main() {
     App::new()
         .add_plugins(DefaultPlugins)
